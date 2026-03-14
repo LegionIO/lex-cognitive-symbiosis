@@ -1,0 +1,29 @@
+# frozen_string_literal: true
+
+require_relative 'lib/legion/extensions/cognitive_symbiosis/version'
+
+Gem::Specification.new do |spec|
+  spec.name          = 'lex-cognitive-symbiosis'
+  spec.version       = Legion::Extensions::CognitiveSymbiosis::VERSION
+  spec.authors       = ['Esity']
+  spec.email         = ['matthewdiverson@gmail.com']
+
+  spec.summary       = 'LEX Cognitive Symbiosis'
+  spec.description   = 'Models mutualistic, parasitic, and commensal relationships between cognitive subsystems — ' \
+                       'co-active subsystems may enhance or drain each other based on symbiotic bond dynamics'
+  spec.homepage      = 'https://github.com/LegionIO/lex-cognitive-symbiosis'
+  spec.license       = 'MIT'
+  spec.required_ruby_version = '>= 3.4'
+
+  spec.metadata['homepage_uri']      = spec.homepage
+  spec.metadata['source_code_uri']   = 'https://github.com/LegionIO/lex-cognitive-symbiosis'
+  spec.metadata['documentation_uri'] = 'https://github.com/LegionIO/lex-cognitive-symbiosis'
+  spec.metadata['changelog_uri']     = 'https://github.com/LegionIO/lex-cognitive-symbiosis'
+  spec.metadata['bug_tracker_uri']   = 'https://github.com/LegionIO/lex-cognitive-symbiosis/issues'
+  spec.metadata['rubygems_mfa_required'] = 'true'
+
+  spec.files = Dir.chdir(File.expand_path(__dir__)) do
+    Dir.glob('{lib,spec}/**/*') + %w[lex-cognitive-symbiosis.gemspec Gemfile]
+  end
+  spec.require_paths = ['lib']
+end
